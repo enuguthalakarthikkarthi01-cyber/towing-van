@@ -3,57 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TowingVan Service</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <title>Bhagyalaxmi Towing Service</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1e3d59; color: white; text-align: center; padding: 1rem; }
+    nav a { margin: 0 1rem; color: white; text-decoration: none; }
+    section { padding: 2rem; }
+    .services, .ratings { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .card { border: 1px solid #ccc; padding: 1rem; width: 250px; text-align: center; border-radius: 8px; }
+    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 6px; }
+    footer { background: #1e3d59; color: white; text-align: center; padding: 1rem; }
+    .banner { background: #f2542d; color: white; text-align: center; padding: 1rem; font-weight: bold; }
+  </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <h1>TowingVan Service</h1>
-    <p>Fast & Friendly Towing Anytime</p>
-    <a href="#contact" class="cta">Request a Tow Now</a>
+    <h1>Bhagyalaxmi Towing Service</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#ratings">Customer Ratings</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- About -->
+  <div class="banner">🚨 Available 24/7 for Emergency Towing 🚨</div>
+
   <section id="about">
     <h2>About Us</h2>
-    <p>We provide reliable towing and roadside assistance across Hyderabad. Our mission is to help stranded drivers get back on the road quickly and safely, with a smile.</p>
+    <p>Bhagyalaxmi Towing Service provides reliable towing for accident, breakdown, and non-movable vehicles. 
+       Our team is available round the clock to ensure your safety and convenience.</p>
   </section>
 
-  <!-- Services -->
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>🚗 Emergency Roadside Assistance</li>
-      <li>🚙 Vehicle Towing (cars, bikes, vans)</li>
-      <li>🛣️ Long-distance Towing</li>
-      <li>🔋 Battery Jump-starts</li>
+    <div class="services">
+      <div class="card">
+        <img src="accident.jpg" alt="Accident Vehicle">
+        <h3>Accident Recovery</h3>
+        <p>Quick response for accident-damaged vehicles.</p>
+      </div>
+      <div class="card">
+        <img src="breakdown.jpg" alt="Breakdown Vehicle">
+        <h3>Breakdown Assistance</h3>
+        <p>Reliable towing for vehicles that stop unexpectedly.</p>
+      </div>
+      <div class="card">
+        <img src="nonmovable.jpg" alt="Non-movable Vehicle">
+        <h3>Non-Movable Vehicles</h3>
+        <p>Safe transport for vehicles that cannot move on their own.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Service Area Map -->
-  <section id="map">
-    <h2>Service Area</h2>
-    <div id="serviceMap"></div>
+  <section id="ratings">
+    <h2>Customer Ratings</h2>
+    <div class="ratings">
+      <div class="card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Fast and professional service!"</p>
+      </div>
+      <div class="card">
+        <h3>⭐⭐⭐⭐</h3>
+        <p>"Reliable and available anytime."</p>
+      </div>
+      <div class="card">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>"Saved me during a late-night breakdown."</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
     <p>📞 Phone: +91 98765 43210</p>
-    <p>💬 WhatsApp: <a href="https://wa.me/919876543210">Chat Now</a></p>
-    <p>📧 Email: towingvan@example.com</p>
-    <p>Available 24/7</p>
+    <p>📧 Email: support@bhagyalaxmitowing.com</p>
+    <p>📍 Location: Hyderabad, Telangana</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 TowingVan Service. All rights reserved.</p>
+    <p>&copy; 2026 Bhagyalaxmi Towing Service | All Rights Reserved</p>
   </footer>
-
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
